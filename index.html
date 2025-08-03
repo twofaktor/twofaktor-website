@@ -150,13 +150,18 @@
 							</header>
 
 							<div>
-								<a target="_blank" href="https://cal.com/twofaktor/mentor-custom" class="button">Reserva una mentoría</a>
+								<a target="_blank" href="https://cal.com/twofaktor" class="button">Reserva una mentoría</a>
 							</div>
 
 							<br>
 
+							<!-- Contenedor que recorta 55px desde arriba -->
+							<div style="width:100%; height:650px; overflow:hidden; position:relative;">
+							<!-- Calendario desplazado hacia arriba 55px -->
+							<div style="position:relative; top:-55px;">
+
 							<!-- Cal inline embed code begins -->
-							<div style="width:100%;height:590px;overflow:auto" id="my-cal-inline-mentor-custom"></div>
+							<div style="width:100%;height:720px;overflow:auto" id="my-cal-inline-mentor-custom"></div>
 							<script type="text/javascript">
 							(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 							Cal("init", "mentor-custom", {origin:"https://app.cal.com"});
@@ -164,13 +169,14 @@
 							Cal.ns["mentor-custom"]("inline", {
 								elementOrSelector:"#my-cal-inline-mentor-custom",
 								config: {"layout":"month_view"},
-								calLink: "twofaktor/mentor-custom",
+								calLink: "twofaktor",
 							});
 
 							Cal.ns["mentor-custom"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 							</script>
 							<!-- Cal inline embed code ends -->
-
+							</div>
+							</div>
 						</div>
 					</section>
 
@@ -193,10 +199,10 @@
 									<ul style="text-align: left; padding-left: 1.5em; list-style-position: outside;">
 										<li><b>Técnico superior en Sistemas de Telecomunicaciones e Informáticos.</b></li>
 										<li><b>Analista de Ciberseguridad e Infraestructura de Redes.</b></li>
-										<li><b>Entusiasta de la tecnología.</b></li>
-										<li><b>Apasionado de Bitcoin y Lightning Network.</b></li>
-										<li><b>Buscador de la soberanía, independencia, privacidad y seguridad.</b></li>
-										<li><b>Certificado en Linux por el <a target="_blank" href="https://www.lpi.org/es/">Linux Professional Institute.</a></b></li>
+										<li><b>Apasionado de la tecnología.</b></li>
+										<li><b>Divulgador de Bitcoin y Lightning Network.</b></li>
+										<li><b>Mi enfoque: autonomía, privacidad y seguridad.</b></li>
+										<li><b>Certificado en Linux por <a target="_blank" href="https://www.lpi.org/es/">Linux Professional Institute.</a></b></li>
 									</ul>
 								</p>
 
@@ -215,15 +221,15 @@
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
-										<a target="_blank" href="mailto:twofaktor@protonmail.com" class="button">Email</a>
+										<a target="_blank" href="mailto:twofaktor@protonmail.com" class="button">✉️ Email ✉️</a>
 								</div>
 							
 								<div class="col-4 col-12-mobile">
-										<a target="_blank" href="https://www.nostrchat.io/dm/npub1k9luehc8hg3c0upckdzzvusv66x3zt0eyw7290kclrpsndepz92sfcpp63" class="button">Nostr MD</a>
+										<a target="_blank" href="https://www.nostrchat.io/dm/npub1k9luehc8hg3c0upckdzzvusv66x3zt0eyw7290kclrpsndepz92sfcpp63" class="button">🦩 Nostr 🦩</a>
 								</div>
 
 								<div class="col-4 col-12-mobile">
-											<a target="_blank" href="https://t.me/twofaktor" class="button">Telegram MD</a>
+											<a target="_blank" href="https://t.me/twofaktor" class="button">📱 Telegram 📱</a>
 								</div>
 
 							</div>
@@ -235,7 +241,7 @@
 							</header>
 
 							<div>
-								<a target="_blank" href="https://donate.minibolt.info" class="button">DONAR</a>
+								<a target="_blank" href="https://donate.minibolt.info" class="button">🤝 DONAR 🤝</a>
 							</div>
 							
 							<br>
