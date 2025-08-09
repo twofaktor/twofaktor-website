@@ -2645,3 +2645,57 @@ input, select, textarea {
 				}
 
 	}
+
+	/* center-column: columna centrada con límites laterales */
+	.center-column {
+	max-width: 720px;
+	margin: 2rem auto;
+	padding: 1.25rem 1.5rem;
+	border-left: 4px solid #e6e6e6;
+	border-right: 4px solid #e6e6e6;
+	background: #ffffff;
+	box-sizing: border-box;
+	font-size: 0.95rem;
+	line-height: 1.45;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+	}
+
+	/* Ajustes responsive */
+	@media (max-width: 576px) {
+	.center-column {
+		margin: 1rem;
+		padding: 1rem;
+		border-left-width: 3px;
+		border-right-width: 3px;
+	}
+	}
+
+	/* Listas dentro de la columna */
+	.center-column ul {
+	text-align: left;
+	padding-left: 1.25rem;
+	margin: 0.5rem 0;
+	}
+
+	.center-column > ul:first-of-type > li:first-child {
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	}
+
+	.center-column .sublist {
+	margin-top: 0.5rem;
+	padding-left: 1rem;
+	}
+
+	/* Ajusta el tamaño del texto del listado secundario */
+	.info-list {
+	font-size: 1.2rem;     /* prueba también 0.875rem si quieres más pequeño */
+	line-height: 1.4;
+	}
+
+	.info-list li {
+	margin-bottom: 0.80rem;
+	/* si quieres que los <b> no amplíen demasiado visualmente: */
+	font-weight: 200;
+	}
