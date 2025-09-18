@@ -250,6 +250,44 @@
 								<a target="_blank" href="https://cal.com/twofaktor" class="button">Abrir en pestaña nueva ↗</a>
 							</div>
 
+							<!-- INICIO Testimonios -->
+							<style>
+								/* Estilos mínimos para testimonios */
+								.tf-testimonials { max-width: 960px; margin: 28px auto; text-align: center; padding: 12px; }
+								.tf-testimonials h4 { margin-bottom: 12px; font-size: 1.05rem; }
+								.tf-testimonials .grid { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+								.tf-testimonials .card { background:#ffffff; color:#fff; border-radius:8px; padding:14px; width: 300px; box-shadow: 0 6px 18px rgba(0,0,0,0.25); text-align:left; }
+								.tf-testimonials .stars { color: #ffd54a; margin-bottom:8px; font-size:0.95rem; }
+								.tf-testimonials blockquote { margin:0 0 10px 0; font-style: italic; color:#000000; }
+								.tf-testimonials .author { font-weight:700; font-size:0.9rem; color:#000000; margin-top:8px; }
+								@media (max-width:720px){ .tf-testimonials .card { width: 100%; } }
+							</style>
+
+							<section class="tf-testimonials" aria-label="Testimonios">
+								<h4>Lo que dicen sobre las mentorías de 2FakTor:</h4>
+								<div class="grid">
+								<article class="card" role="article">
+									<div class="stars" aria-hidden="true">★★★★★</div>
+									<blockquote>El servicio fue excelente, me acompañó y ayudó durante todo el proceso, un profesional muy recomendable.</blockquote>
+									<div class="author">— Helena.</div>
+								</article>
+
+								<article class="card" role="article">
+									<div class="stars" aria-hidden="true">★★★★★</div>
+									<blockquote>Me gustó mucho la mentoría. Sabe explicar muy bien e ir a los puntos básicos para lo que necesitas. Además es humilde y transmite seguridad y confianza. En un mundo dónde empezar es abrumador, te da luz en el camino.</blockquote>
+									<div class="author">— Anónimo.</div>
+								</article>
+								</div>
+								<!-- Reserva: ★☆ -->
+
+								<br>
+
+								<div style="margin-top:12px;">
+									<a target="_blank" href="https://formstr.app/i/2fa-mentor-review" class="button" style="text-decoration:none;">Dejar una reseña</a>
+								</div>
+							</section>
+							<!-- Final Testimonios -->
+
 							<!-- Reserva
 							<div class="row">
 								<div class="col-12">
@@ -358,6 +396,48 @@
 								<button type="submit" name="choiceKey" value="custom-tip">🏃‍♂️ DONACIÓN RÁPIDA FLEXIBLE 🏃‍♀️</button>
 							</form>
 							-->
+							
+							<br>
+
+							<hr>
+							
+							<br>
+
+							<header>
+								<h2><u>Nostr</u></h2>
+							</header>
+
+							<div id="nostr-embed-npub1k9luehc8hg3c0upckdzzvusv66x3zt0eyw7290kclrpsndepz92sfcpp63" 
+							style="margin: 0 auto; display: block; text-align: center; max-width: 600px;">
+							</div>
+
+							<script>
+							!(function () {
+								const n = document.createElement('script');
+								n.type = 'text/javascript';
+								n.async = true;
+								n.src = 'https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@0.1.16/dist/nostr-embed.js';
+
+								const options = {
+								showZaps: false,
+								showCopyAddr: false,
+								hideNostrich: true,
+								showFollowing: true,
+								};
+
+								n.onload = function () {
+								nostrEmbed.init(
+									'npub1k9luehc8hg3c0upckdzzvusv66x3zt0eyw7290kclrpsndepz92sfcpp63',
+									'#nostr-embed-npub1k9luehc8hg3c0upckdzzvusv66x3zt0eyw7290kclrpsndepz92sfcpp63',
+									'',
+									options
+								);
+								};
+
+								const a = document.getElementsByTagName('script')[0];
+								a.parentNode.insertBefore(n, a);
+							})();
+							</script>
 
 						</div>
 					</section>
@@ -369,7 +449,7 @@
 				<!-- Copyright -->
 				<ul class="copyright">
 					<li>
-					Made with 🕺 somewhere on 🌎 | ⚡️2FakTor⚡️ |
+					Made with 🕺 somewhere on 🌐 | ⚡️2FakTor⚡️ |
 					<a target="_blank" href="https://keyserver.minibolt.info/pks/lookup?op=get&search=0x26c199fc0cb4d5a5d3ae67d118e2204169219505" class="icon solid fa-key" aria-label="Clave GPG" title="Clave GPG">
 						<span class="label">Clave GPG</span>Clave GPG
 					</a> |
